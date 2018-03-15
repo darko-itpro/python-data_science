@@ -1,0 +1,30 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+DUA800853021,DUA853,"H","Gare du Nord - Pontoise / Luzarches / Beauvais / Creil","",2,,7B4339,FFFFFF
+DUA800854541,DUA854,"J","Gare St-Lazare - Ermont Eaubonne / Vernon / Gisors","",3,,CDCD00,FFFFFF
+DUA800853522,DUA853,"K","Gare du Nord - Crépy en Valois","",3,,C7B300,FFFFFF
+DUA800854542,DUA854,"L","Gare St-Lazare - Versailles R. Droite / Cergy Le Haut / Noisy le-Roi / St-Germain-en-Laye GC","",3,,7584BC,FFFFFF
+DUA800853521,DUA853,"H","Gare du Nord - Pontoise / Luzarches / Beauvais / Creil","",3,,7B4339,FFFFFF
+DUA800804581,DUA804,"D","Creil - Corbeil Essonnes / Melun / Malesherbes","",3,,5E9620,FFFFFF
+DUA800805591,DUA805,"E","Haussmann Saint-Lazare - Chelles Gournay / Tournan","",3,,BD76A1,FFFFFF
+DUA800855548,DUA855,"U","La Défense Grande Arche - La Verrière","",3,,D60058,FFFFFF
+DUA800850509,DUA850,"T4","Aulnay sous Bois - Bondy","",3,,FFBF00,FFFFFF
+DUA800850011,DUA850,"P","Gare de l'Est - La Ferté Milon / Château-Thierry / Crécy la Chapelle / La Ferté G. Centre / Provins","",2,,F0B600,FFFFFF
+DUA800852051,DUA852,"N","Gare Montparnasse / Gare Montparnasse Vaugirard - Chartres / Dreux / Evreux","",2,,00A092,FFFFFF
+DUA800855048,DUA855,"U","La Défense Grande Arche - La Verrière via Chaville Rive Droite","",2,,D60058,FFFFFF
+DUA800851081,DUA851,"R","Gare de Lyon / Gare de Bercy - Montereau / Montargis / Laroche Migennes","",2,,E4B4D1,FFFFFF
+DUA800805091,DUA805,"E","Haussmann Saint-Lazare - Chelles Gournay / Tournan","",2,,BD76A1,FFFFFF
+DUA800804081,DUA804,"D","Creil - Corbeil Essonnes / Melun / Malesherbes","",2,,5E9620,FFFFFF
+DUA800854042,DUA854,"L","Gare St-Lazare - Versailles R. Droite / Cergy Le Haut / Noisy le-Roi / St-Germain-en-Laye GC","",2,,7584BC,FFFFFF
+DUA800853022,DUA853,"K","Gare du Nord - Crépy en Valois","",2,,C7B300,FFFFFF
+DUA800854041,DUA854,"J","Gare St-Lazare - Ermont Eaubonne / Vernon / Gisors","",2,,CDCD00,FFFFFF
+DUA800850009,DUA850,"T4","Aulnay sous Bois - Bondy","",0,,FFBF00,FFFFFF
+DUA800850012,DUA850,"T11","T11","",0,,f2301c,FFFFFF
+DUA810802061,DUA802,"B","Aéroport CDG 2 / Mitry Claye - Robinson / St-Rémy lès Chevreuse","",2,,427DBD,FFFFFF
+DUA810801041,DUA801,"A","Cergy Le Haut / Poissy / St-Germain-en-Laye - Marne-la-Vallée Chessy Disneyland / Boissy-St-Léger","",2,,D1302F,FFFFFF
+DUA800803071,DUA803,"C","Pontoise / Versailles R. Gauche / St-Quentin en Y. - Versailles Ch. / Dourdan la F. / St-Martin d'E","",2,,FCD946,FFFFFF
+DUA800852551,DUA852,"N","Gare Montparnasse / Gare Montparnasse Vaugirard - Chartres / Dreux / Evreux","",3,,00A092,FFFFFF
+DUA800851581,DUA851,"R","Gare de Lyon / Gare de Bercy - Montereau / Montargis / Laroche Migennes","",3,,E4B4D1,FFFFFF
+DUA800850511,DUA850,"P","Gare de l'Est - La Ferté Milon / Château-Thierry / Crécy la Chapelle / La Ferté G. Centre / Provins","",3,,F0B600,FFFFFF
+DUA800803571,DUA803,"C","Pontoise / Versailles R. Gauche / St-Quentin en Y. - Versailles Ch. / Dourdan la F. / St-Martin d'E","",3,,FCD946,FFFFFF
+DUA810801541,DUA801,"A","Sartrouville - Cergy le Haut (Bus de substitution)","",3,,D1302F,FFFFFF
+DUA810802561,DUA802,"Aéroport C","Aéroport Charles de Gaulle 1 (Terminal 1 - Terminal 3) - Aulnay sous Bois (Bus)","",3,,000000,FFFFFF
