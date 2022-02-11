@@ -15,9 +15,11 @@ publics que des illustrations d'usage.
 Il faut donc commencer par récupérer les sources en local.
 
 Assurez-vous que [pip](https://pypi.python.org/pypi/pip) est installé. Créez
-si vous le souhaitez un [virtualenv](https://virtualenv.pypa.io/en/stable/)
+si vous le souhaitez un [virtualenv](https://docs.python.org/3/library/venv.html)
 dédié à la formation. Si vous utilisez un IDE tel que PyCharm, vous pouvez l'utiliser pour créer
-ce virtualenv. Placez vous alors à la racine du projet et saisissez
+ce virtualenv.
+
+À partir de la racine du projet saisissez
 
 ```
 pip install -r requirements.txt
@@ -25,26 +27,22 @@ pip install -r requirements.txt
 
 Votre environnement contient alors toutes les dépendances nécessaires.
 
-(documentation pas encore publiée)
-Il ne reste plus qu'à générer la documentation. Placez-vous dans le répertoire
-*docs* et exécutez
- 
-```
-make html
-```
+## Environnement de travail
 
-La documentation est alors dispoible dans le sous répertoire *_build/html*.
-
-## Cahiers d'exercices
-
-Le répertoire *notebooks* contient des *cahiers d'exercices*. Ceux-ci sont
-des documents type *Jupyter Notebooks* générés à l'aide de
+Nous allons pour cette formation utilser des documents de type
+*Jupyter Notebooks* générés à l'aide du projet
 [Jupyter](http://jupyter.org/). Ce dernier est inclus dans les dépendances.
  
 Placez-vous dans le répertoire *notebooks* et exécutez la commande
 
 ```
 jupyter notebook
+```
+
+ou
+
+```
+jupyter-lab
 ```
 
 Vous pouvez maintenant travailler avec les *notebooks*. Ceux-ci sont proposés
