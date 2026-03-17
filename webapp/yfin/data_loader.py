@@ -29,29 +29,3 @@ def extract_data(ticker: str, period: str) -> pd.DataFrame:
     data = data[data["High"] != data["Low"]]
 
     return data
-
-def symbol_lookup(name:str, exchange:str = "PAR"):
-    symbol = None
-    result = yf.Search(name)
-    for quote in result.quotes:
-        if quote['exchange'] == exchange:
-            symbol = quote['symbol']
-
-    if symbol is not None:
-        return symbol
-    else:
-        raise LookupError(f"No symbol found for {name}")
-
-def extract_names(path:Path):
-    data = pd.read_csv(path, encoding="iso-8859-1", sep=";")
-    quotes = {}
-    for name in data['libellé']:
-        if name not in quotes.keys():
-            try:
-                symbol = symbol_lookup(name)
-                quotes[name] = symbol
-            except LookupError:
-                print(f"{name} not found")
-
-    print(quotes)
-
