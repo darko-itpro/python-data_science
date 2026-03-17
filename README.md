@@ -35,18 +35,26 @@ Nous allons pour cette formation utilser des documents de type
  
 Placez-vous dans le répertoire *notebooks* et exécutez la commande
 
-```
+```shell
 jupyter notebook
 ```
 
 ou
 
-```
+```shell
 jupyter-lab
 ```
 
 Vous pouvez maintenant travailler avec les *notebooks*. Ceux-ci sont proposés
 comme outil pour vous aider à vous familiariser avec le langage.
+
+Les démos Streamlit se lancent avec :
+```shell
+python -m streamlit run webapp/stockapp.py --browser.gatherUsageStats false
+python -m streamlit run webapp/stockapp_light.py --browser.gatherUsageStats false
+```
+
+L'option `--browser.gatherUsageStats` désactive l'envoi de données d'usage.
 
 ## Ressources
 
