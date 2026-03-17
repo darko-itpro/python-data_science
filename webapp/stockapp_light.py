@@ -26,7 +26,6 @@ fig = go.Figure(data=[go.Candlestick(x=data.index,
                                     close=data['Close']
                                     )]
                 )
-tab_chart, tab_data = st.tabs(["Chart", "Data"])
 
 st.plotly_chart(fig, use_container_width=True)
 
