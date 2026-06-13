@@ -56,6 +56,40 @@ python -m streamlit run webapp/stockapp_light.py --browser.gatherUsageStats fals
 
 L'option `--browser.gatherUsageStats` désactive l'envoi de données d'usage.
 
+## Travailler avec des Notebooks et des modules
+
+Si pendant les exercices ou les démos, il est nécessaire de mutualiser du code, celui-ci sera écrit 
+dans un module dans l'arborescence du répertoire `src/`. Cependant, pour qu'il soit retrouvé par les
+notebooks, il est nécessaire que le répertoire `src/` soit dans les paths de Python.
+
+Le plus simple est d'installer le projet courant en mode *éditable* avec l'option `-e` de 
+`pip install`. Exécutez simplement :
+
+```shell
+pip install -e .
+```
+
+ou
+
+```shell
+uv pip install -e .
+```
+
+Attention cependant, dans un environnement iPython ou Notebook, un module n'est importé qu'une 
+seule fois et s'il a été modifié, il est nécessaire soit de redémarrer le kernel soit de recharger 
+le module.
+
+iPython fournit l'extension [autoreload](https://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html#autoreload)
+qui permet de recharger le module à chaque exécution de code (comme s'il s'agissait de scripts).
+
+Au début de vos Notebooks, pendant le développement, vous pouvez ajouter les lignes suivantes :
+
+```jupyter
+%load_ext autoreload
+%autoreload 2
+```
+Vous pouvez aussi exécuter ces deux lignes dans vos shells iPython.
+
 ## Ressources
 
 Le répertoire *assets* contient des fichiers issus de
