@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyschoolscience"
-version = "2026.10.dev1"
+version = "0.1.0.dev1"
 description = "Un projet destiné à illustrer l'usage d'un projet Data Science."
 readme = "README.md"
 requires-python = ">=3.14"
@@ -21,10 +21,12 @@ webdemo = [
     "streamlit>=1.58.0",
     "yfinance>=1.4.1",
 ]
-wip = [
-    "scikit-learn>=1.9.0",
-    "seaborn>=0.13.2",
-]
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[dependency-groups]
+wip = [
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]

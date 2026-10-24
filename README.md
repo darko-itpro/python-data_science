@@ -12,22 +12,28 @@ publics que des illustrations d'usage.
 
 ## Mise en place de l'environnement
 
-Il faut donc commencer par récupérer les sources en local.
+Depuis sa version `2026.10.dev1`, ce projet n'utilise plus le `requirements.txt`. Les dépendances 
+sont déclarées dans le fichier `pyproject.yaml` et accompagnées d'un `uv.lock`.
 
-Assurez-vous que [pip](https://pypi.python.org/pypi/pip) est installé. Créez
-si vous le souhaitez un [virtualenv](https://docs.python.org/3/library/venv.html)
-dédié à la formation. Si vous utilisez un IDE tel que PyCharm, vous pouvez l'utiliser pour créer
-ce virtualenv.
+Installez le projet par :
 
-À partir de la racine du projet saisissez
-
-```
-pip install -r requirements.txt
+```shell
+pip install -e .
 ```
 
-Votre environnement contient alors toutes les dépendances nécessaires.
+## Compatibilité `uv`
+
+Le passage à une configuration dans le `pyproject.toml` rends ce projet immédiatement utilisable 
+avec `uv`. Mais ce projet est déjà géré avec `uv` comme le témoigne la présence du fichier 
+`uv.lock`. Si vous utilisez `uv`, Vous pouvez donc exécuter :
+
+```shell
+uv sync
+```
 
 ## Environnement de travail
+
+### Les notebooks Jupyter et Jupyter Lab
 
 Nous allons pour cette formation utilser des documents de type
 *Jupyter Notebooks* générés à l'aide du projet
@@ -48,7 +54,25 @@ jupyter-lab
 Vous pouvez maintenant travailler avec les *notebooks*. Ceux-ci sont proposés
 comme outil pour vous aider à vous familiariser avec le langage.
 
-Les démos Streamlit se lancent avec :
+### Les démos web
+
+Le porjet propose une démo Streamlit. Cette démo nécessite l'installation du projet avec ses 
+dépendances optionneles `web `. 
+
+Vous devez les installer soit avec :
+
+```shell
+pip install -e ".[web]"
+```
+
+soit avec :
+
+```shell
+uv sync --extra web
+```
+
+Streamlit se lance avec :
+
 ```shell
 python -m streamlit run webapp/stockapp.py --browser.gatherUsageStats false
 python -m streamlit run webapp/stockapp_light.py --browser.gatherUsageStats false
@@ -58,22 +82,15 @@ L'option `--browser.gatherUsageStats` désactive l'envoi de données d'usage.
 
 ## Travailler avec des Notebooks et des modules
 
-Si pendant les exercices ou les démos, il est nécessaire de mutualiser du code, celui-ci sera écrit 
-dans un module dans l'arborescence du répertoire `src/`. Cependant, pour qu'il soit retrouvé par les
-notebooks, il est nécessaire que le répertoire `src/` soit dans les paths de Python.
+Depuis sa version `2026.10.dev1`, ce projet a adopté une structure en *package*. Le code doit donc 
+être dans l'arborescence du répertoire `src/`.
 
-Le plus simple est d'installer le projet courant en mode *éditable* avec l'option `-e` de 
-`pip install`. Exécutez simplement :
+Le projet a été installé en mode *éditable* avec l'option `-e` de `pip install` par 
+`pip install -e`.
 
-```shell
-pip install -e .
-```
+Avec `uv`, `uv sync` a installé le projet en mode éditable.
 
-ou
-
-```shell
-uv pip install -e .
-```
+Ceci vous permet utiliser le code dans l'arborescence du répertoire `src/` dans les notebooks.
 
 Attention cependant, dans un environnement iPython ou Notebook, un module n'est importé qu'une 
 seule fois et s'il a été modifié, il est nécessaire soit de redémarrer le kernel soit de recharger 
